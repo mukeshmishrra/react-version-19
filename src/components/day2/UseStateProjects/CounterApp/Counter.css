@@ -1,0 +1,111 @@
+.counter-card {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 32px;
+    background: linear-gradient(180deg, rgba(28, 36, 65, 0.92), rgba(16, 22, 43, 0.98));
+    box-shadow: 0 24px 60px rgba(8, 14, 32, 0.35);
+    color: #f7f9ff;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(14px);
+}
+
+.counter-header {
+    display: grid;
+    gap: 0.75rem;
+    text-align: center;
+    margin-bottom: 1.75rem;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.45rem 1rem;
+    border-radius: 999px;
+    background: rgba(108, 99, 255, 0.18);
+    color: #c5c9ff;
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.counter-header h2 {
+    margin: 0;
+    font-size: clamp(1.75rem, 2vw, 2.4rem);
+    letter-spacing: -0.04em;
+}
+
+.counter-header p {
+    margin: 0;
+    color: #c9d4ff;
+    line-height: 1.8;
+}
+
+.counter-display {
+    display: grid;
+    place-items: center;
+    padding: 1.6rem 1.2rem;
+    border-radius: 24px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    margin-bottom: 1.6rem;
+}
+
+.counter-value {
+    font-size: clamp(3.25rem, 5vw, 4.5rem);
+    font-weight: 700;
+    letter-spacing: -0.05em;
+}
+
+.counter-label {
+    margin-top: 0.35rem;
+    color: #97a3d6;
+}
+
+.counter-actions {
+    display: grid;
+    gap: 0.9rem;
+}
+
+.action-button {
+    width: 100%;
+    padding: 0.95rem 1rem;
+    border: none;
+    border-radius: 18px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #eff3ff;
+    background: rgba(255, 255, 255, 0.08);
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.action-button:hover:not(:disabled) {
+    transform: translateY(-1px);
+    background: rgba(255, 255, 255, 0.14);
+}
+
+.action-button:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
+.action-button.accent {
+    background: linear-gradient(135deg, #7e7dff, #3b76ff);
+    box-shadow: 0 14px 30px rgba(55, 96, 255, 0.22);
+}
+
+.action-button.secondary {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+@media (min-width: 640px) {
+    .counter-card {
+        padding: 2.5rem;
+    }
+
+    .counter-actions {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
