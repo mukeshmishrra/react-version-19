@@ -4,6 +4,7 @@ import { BasicStyling } from './components/day2/BasicStyling';
 import { ProductList } from './components/day2/ProductList';
 import { UseStatePractise  } from './components/day2/UseStateProjects/UseStatePractise';
 import { Condition } from './components/day2/Condition';
+import { Day3Playground } from './components/day3/Day3Playground';
 
 function App() {
   return (
@@ -25,6 +26,11 @@ function App() {
 
       {/* CONCEPT 4. Looping Concept practise component */}
       <ProductList />
+
+
+
+      {/* Day 3 */}
+      <Day3Playground />
 
     </>
   )

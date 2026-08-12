@@ -1,75 +1,47 @@
-# React + TypeScript + Vite
+Syllabus : 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Phase 1:  React Fundamental 
+  1. Component
+  2. jsx
+  3. props
+  4. conditional rendering 
+  5. loops
+  6. Styling and adding Css class name
+     Add bootstrap in the project 
+     Add tailwind Css in the project 
+ 
 
-Currently, two official plugins are available:
+Phase 2: State Menagement 
+  7. useState Hook
+  8. form handling, form validation, Form Submission process
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Phase 3: side effect & Api calling 
+  9. useEffect
+  10. Api calling, axios/fetch, loading and if data available page load scenario
+  
 
-## React Compiler
+Phase 4: Data sharing with the component 
+  11. parent - child component
+      child to parent component
+      non relational component
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Phase 5: important hooks 
+  12. useRef
+  13. useMemo
+  14. useCallback
 
-## Expanding the ESLint configuration
+Phase 6: Advance concept
+  15. Routing concept
+  16. Global state management - Context api / Redux 
+  17. Debugging tools, tips, tricks
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Phase 7: Create 2 major project 
+Project-1: 
+Project Idea: Full-Featured E-commerce Store / Dashboard
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Features: User Authentication (Login/Logout), API Integration, Product Filtering & Sorting, Cart Management, Protected Routes, aur Responsive Design.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Project-2: 
+State management using redux project 
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+Phase 8: React 19 newly released features
