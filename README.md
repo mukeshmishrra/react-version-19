@@ -45,3 +45,9 @@ Project-2:
 State management using redux project 
 
 Phase 8: React 19 newly released features
+
+
+
+
+https://www.youtube.com/watch?v=OEMkAFtRH1E&list=PL0b6OzIxLPbzGtrDFaF6uoC33cPNHDmeV&index=37
+

@@ -5,32 +5,37 @@ import { ProductList } from './components/day2/ProductList';
 import { UseStatePractise  } from './components/day2/UseStateProjects/UseStatePractise';
 import { Condition } from './components/day2/Condition';
 import { Day3Playground } from './components/day3/Day3Playground';
+import { FormPlayground } from './components/FormHandling/FormPlayground';
 
 function App() {
   return (
     <>
       <h1>App Component</h1>
       {/* Day 1: Hello Component */}
-      <Hello />
+      {/* <Hello /> */}
 
 
       { /* Day 2: Basic Styling Component */}
       {/* CONCEPT 1 */}
-      <BasicStyling />
+      {/* <BasicStyling /> */}
 
       {/* CONCEPT 2. UseState Concept Practise component */}
-      <UseStatePractise />
+      {/* <UseStatePractise /> */}
 
       {/* CONCEPT 3. Condition Rendering Concept practise component */}
-      <Condition />
+      {/* <Condition /> */}
 
       {/* CONCEPT 4. Looping Concept practise component */}
-      <ProductList />
+      {/* <ProductList /> */}
 
 
 
       {/* Day 3 */}
-      <Day3Playground />
+      {/* <Day3Playground /> */}
+
+      {/* Day 4 */}
+      <FormPlayground />
+
 
     </>
   )

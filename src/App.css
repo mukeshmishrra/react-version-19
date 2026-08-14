@@ -1,0 +1,24 @@
+.form-container {
+    padding: 16px;
+    margin: 16px;
+    background: aliceblue;
+}
+
+.input-box {
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.submit-button {
+    margin-inline: 16px;
+    padding: 5px;
+    color: Blue;
+    font-weight: 700;
+    font-size: larger;
+
+    button {
+        background: skyblue;
+        font-weight: 700;
+    }
+}
